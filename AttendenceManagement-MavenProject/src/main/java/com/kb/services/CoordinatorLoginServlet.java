@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,6 +14,7 @@ import com.kb.daos.CoordinatorLoginDAO;
 import com.nt.beans.CoordinatorLoginBean;
 
 @SuppressWarnings("serial")
+@WebServlet("coordinatorlogin")
 public class CoordinatorLoginServlet extends HttpServlet
 {
 	protected void doPost(HttpServletRequest req, HttpServletResponse res)
