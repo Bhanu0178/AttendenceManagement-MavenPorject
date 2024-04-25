@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.kb.beans.CoordinatorLoginBean;
 import com.kb.daos.CoordinatorLoginDAO;
-import com.nt.beans.CoordinatorLoginBean;
 
 @SuppressWarnings("serial")
 @WebServlet("/coordinatorlogin")

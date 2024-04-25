@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.kb.beans.CoordinatorLoginBean;
 import com.kb.services.DBConnection;
-import com.nt.beans.CoordinatorLoginBean;
 
 public class CoordinatorLoginDAO
 {
