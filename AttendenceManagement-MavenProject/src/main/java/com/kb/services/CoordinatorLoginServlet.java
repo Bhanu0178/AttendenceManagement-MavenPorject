@@ -14,7 +14,7 @@ import com.kb.daos.CoordinatorLoginDAO;
 import com.nt.beans.CoordinatorLoginBean;
 
 @SuppressWarnings("serial")
-@WebServlet("coordinatorlogin")
+@WebServlet("/coordinatorlogin")
 public class CoordinatorLoginServlet extends HttpServlet
 {
 	protected void doPost(HttpServletRequest req, HttpServletResponse res)
