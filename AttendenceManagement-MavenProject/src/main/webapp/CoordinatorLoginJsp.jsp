@@ -11,8 +11,8 @@
 	<%
 		CoordinatorLoginBean clb = (CoordinatorLoginBean)session.getAttribute("coordinatorloginbean");
 	%>
-	<strong>RollNo:<%=clb.getRollno()%></strong>
-	<strong>Name:<%=clb.getName() %></strong>
+	<p>RollNo:<strong><%=clb.getRollno()%></strong><br>
+	<p>Name:<strong><%=clb.getName() %></strong></p><br>
 	<a href="AddStudentAttendence.html">Add Student Attendence</a>
 </body>
 </html>
