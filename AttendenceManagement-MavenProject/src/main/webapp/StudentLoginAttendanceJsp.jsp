@@ -10,24 +10,24 @@
 <body>
 	<%
 	StudentLoginAttendanceBean  slab = (StudentLoginAttendanceBean)session.getAttribute("slab");
-	out.println("RollNo: " + slab.getRollNo());
-	out.println("Name: " + slab.getName());
+	out.println("RollNo: " + slab.getRollNo() + "<br>");
+	out.println("Name: " + slab.getName() + "<br>");
 	%>
 	<form action="studentattendanceform" method="post" >
 		<label for="sub1">Sub1</label>
-		<input type="text" name="sub1" id="sub1" required>
+		<input type="text" name="sub1" id="sub1" required><br>
 		<label for="sub2">Sub1</label>
-		<input type="text" name="sub2" id="sub2" required>
+		<input type="text" name="sub2" id="sub2" required><br>
 		<label for="sub3">Sub1</label>
-		<input type="text" name="sub3" id="sub3" required>
+		<input type="text" name="sub3" id="sub3" required><br>
 		<label for="sub4">Sub1</label>
-		<input type="text" name="sub4" id="sub4" required>
+		<input type="text" name="sub4" id="sub4" required><br>
 		<label for="sub5">Sub1</label>
-		<input type="text" name="sub5" id="sub5" required>
+		<input type="text" name="sub5" id="sub5" required><br>
 		<label for="sub6">Sub1</label>
-		<input type="text" name="sub6" id="sub6" required>
+		<input type="text" name="sub6" id="sub6" required><br>
 		<label for="attdate">Sub1</label>
-		<input type="date" name="attdate" id="attdate" required>
+		<input type="date" name="attdate" id="attdate" required><br>
 		<button type="submit">Submit</button>
 	</form>
 </body>
