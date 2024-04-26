@@ -17,17 +17,17 @@
 		<input type="hidden" name="rollno"  value="<%=slab.getRollNo()%>">
 		<input type="hidden" name="sname" value="<%=slab.getName()%>">
 		<label for="sub1">Sub1</label>
-		<input type="text" name="sub1" id="sub1" required><br><br>
+		<input type="text" name="sub1" id="sub1" required maxlength="1"><br><br>
 		<label for="sub2">Sub2</label>
-		<input type="text" name="sub2" id="sub2" required><br><br>
+		<input type="text" name="sub2" id="sub2" required maxlength="1""><br><br>
 		<label for="sub3">Sub3</label>
-		<input type="text" name="sub3" id="sub3" required><br><br>
+		<input type="text" name="sub3" id="sub3" required maxlength="1""><br><br>
 		<label for="sub4">Sub4</label>
-		<input type="text" name="sub4" id="sub4" required><br><br>
+		<input type="text" name="sub4" id="sub4" required maxlength="1""><br><br>
 		<label for="sub5">Sub5</label>
-		<input type="text" name="sub5" id="sub5" required><br><br>
+		<input type="text" name="sub5" id="sub5" required maxlength="1""><br><br>
 		<label for="sub6">Sub6</label>
-		<input type="text" name="sub6" id="sub6" required><br><br>
+		<input type="text" name="sub6" id="sub6" required maxlength="1""><br><br>
 		<label for="attdate">AttDate</label>
 		<input type="date" name="attdate" id="attdate" required><br><br>
 		<button type="submit">Submit</button>

@@ -10,6 +10,7 @@
 	<%
 	StudentAttendanceBean sab = (StudentAttendanceBean) session.getAttribute("studentattendancebean");
 	%>
+	<strong>**<%=sab.getRollNo()%> Student Attendance Added**</strong><br>
 	<table cellspacing="0" border="1">
 		<tr>
 			<th>RollNo</th>
@@ -34,5 +35,6 @@
 			<td><%= sab.getAttdate()%></td>
 		</tr>
 	</table>
+	<%@include file="AddStudentAttendence.html" %>
 </body>
 </html>
