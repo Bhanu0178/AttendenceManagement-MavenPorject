@@ -8,33 +8,9 @@
 </head>
 <body>
 	<%
-	StudentAttendanceBean sab = (StudentAttendanceBean) request.getAttribute("sab");
+	String sab = (String) request.getParameter("rollno");
 	%>
-	<strong>**<%=sab.getRollNo()%> Student Attendance Added**</strong><br>
-	<table cellspacing="0" border="1">
-		<tr>
-			<th>RollNo</th>
-			<th>Name</th>
-			<th>Sub1</th>
-			<th>Sub2</th>
-			<th>Sub3</th>
-			<th>Sub4</th>
-			<th>Sub5</th>
-			<th>Sub6</th>
-			<th>AttDate</th>
-		</tr>
-		<tr>
-			<td><%=sab.getRollNo()%></td>
-			<td><%=sab.getName() %></td>
-			<td><%=sab.getSub1() %></td>
-			<td><%=sab.getSub2() %></td>
-			<td><%=sab.getSub3() %></td>
-			<td><%=sab.getSub4() %></td>
-			<td><%= sab.getSub5()%></td>
-			<td><%= sab.getSub5()%></td>
-			<td><%= sab.getAttdate()%></td>
-		</tr>
-	</table>
+	<strong>**<%=sab%> Student Attendance Added**</strong><br>
 	<%@include file="AddStudentAttendence.html" %>
 </body>
 </html>
