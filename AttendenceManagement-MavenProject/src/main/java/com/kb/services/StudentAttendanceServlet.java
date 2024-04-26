@@ -50,7 +50,7 @@ public class StudentAttendanceServlet extends HttpServlet
 			int k = new StudentAttendanceDAO().add(sab);
 			if(k>0)
 			{
-				hs.setAttribute("studentattendancebean", sab);
+				req.setAttribute("sab", sab);
 				req.getRequestDispatcher("StudentAttendanceJsp.jsp").forward(req, res);
 			}
 			else

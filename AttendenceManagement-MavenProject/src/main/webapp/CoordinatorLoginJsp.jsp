@@ -9,7 +9,7 @@
 </head>
 <body>
 	<%
-		CoordinatorLoginBean clb = (CoordinatorLoginBean)session.getAttribute("coordinatorloginbean");
+		CoordinatorLoginBean clb = (CoordinatorLoginBean)session.getAttribute("clb");
 	%>
 	<p>RollNo:&nbsp;<strong><%=clb.getRollno()%></strong><br>
 	<p>Name:&nbsp;<strong><%=clb.getName() %></strong></p>

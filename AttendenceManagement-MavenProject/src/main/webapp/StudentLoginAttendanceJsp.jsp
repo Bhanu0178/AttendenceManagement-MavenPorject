@@ -9,7 +9,7 @@
 </head>
 <body>
 	<%
-	StudentLoginAttendanceBean  slab = (StudentLoginAttendanceBean)session.getAttribute("slab");
+	StudentLoginAttendanceBean  slab = (StudentLoginAttendanceBean)request.getAttribute("slab");
 	out.println("RollNo: " + slab.getRollNo() + "<br>");
 	out.println("Name: " + slab.getName() + "<br><br>");
 	%>

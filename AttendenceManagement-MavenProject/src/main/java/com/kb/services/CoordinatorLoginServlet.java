@@ -30,7 +30,7 @@ public class CoordinatorLoginServlet extends HttpServlet
 		else
 		{
 			HttpSession hs = req.getSession();
-			hs.setAttribute("coordinatorloginbean", clb);
+			hs.setAttribute("clb", clb);
 			RequestDispatcher rd = req.getRequestDispatcher("CoordinatorLoginJsp.jsp");
 			rd.forward(req, res);
 		}

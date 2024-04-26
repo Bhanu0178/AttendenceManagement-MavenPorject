@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%
-	StudentAttendanceBean sab = (StudentAttendanceBean) session.getAttribute("studentattendancebean");
+	StudentAttendanceBean sab = (StudentAttendanceBean) request.getAttribute("sab");
 	%>
 	<strong>**<%=sab.getRollNo()%> Student Attendance Added**</strong><br>
 	<table cellspacing="0" border="1">
