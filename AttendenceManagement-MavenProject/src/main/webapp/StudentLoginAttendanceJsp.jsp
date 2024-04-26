@@ -9,13 +9,14 @@
 </head>
 <body>
 	<%
-	StudentLoginAttendanceBean  slab = (StudentLoginAttendanceBean)request.getAttribute("slab");
-	out.println("RollNo: " + slab.getRollNo() + "<br>");
-	out.println("Name: " + slab.getName() + "<br><br>");
+	String rollNo = (String)request.getParameter("rollno");
+	String name = (String)request.getAttribute("name");
+	out.println("RollNo: " + rollNo + "<br>");
+	out.println("Name: " + name + "<br><br>");
 	%>
 	<form action="studentattendanceform" method="post" >
-		<input type="hidden" name="rollno"  value="<%=slab.getRollNo()%>">
-		<input type="hidden" name="sname" value="<%=slab.getName()%>">
+		<input type="hidden" name="rollno"  value="<%=rollNo%>">
+		<input type="hidden" name="sname" value="<%=name%>">
 		<label for="sub1">Sub1</label>
 		<input type="text" name="sub1" id="sub1" required maxlength="1"><br><br>
 		<label for="sub2">Sub2</label>
