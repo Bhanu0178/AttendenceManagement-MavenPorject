@@ -35,6 +35,6 @@
 			<td><%= sab.getAttdate()%></td>
 		</tr>
 	</table>
-	<%@include file="AddStudentAttendence.html" %>
+	<a href="studentlogout">Student Logout</a>
 </body>
 </html>
