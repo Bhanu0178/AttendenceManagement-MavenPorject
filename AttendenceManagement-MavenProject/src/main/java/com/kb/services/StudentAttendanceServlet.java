@@ -16,7 +16,6 @@ import com.kb.daos.StudentAttendanceDAO;
 @WebServlet("/studentattendanceform")
 public class StudentAttendanceServlet extends HttpServlet
 {
-	private StudentAttendanceBean sab = null;
 	protected void doPost(HttpServletRequest req, HttpServletResponse res)
 	throws ServletException, IOException
 	{
@@ -37,7 +36,7 @@ public class StudentAttendanceServlet extends HttpServlet
 			String sub5 = req.getParameter("sub5");
 			String sub6 = req.getParameter("sub6");
 			String attDate = req.getParameter("attdate");
-			sab = new StudentAttendanceBean();
+			StudentAttendanceBean sab = new StudentAttendanceBean();
 			sab.setRollNo(rollNo);
 			sab.setName(sname);
 			sab.setSub1(sub1);
