@@ -29,6 +29,7 @@ public class StudentAttendanceServlet extends HttpServlet
 		else
 		{
 			String rollNo = req.getParameter("rollno");
+			String sname = req.getParameter("sname");
 			String sub1 = req.getParameter("sub1");
 			String sub2 = req.getParameter("sub2");
 			String sub3 = req.getParameter("sub3");
@@ -38,6 +39,7 @@ public class StudentAttendanceServlet extends HttpServlet
 			String attDate = req.getParameter("attdate");
 			sab = new StudentAttendanceBean();
 			sab.setRollNo(rollNo);
+			sab.setName(sname);
 			sab.setSub1(sub1);
 			sab.setSub2(sub2);
 			sab.setSub3(sub3);
