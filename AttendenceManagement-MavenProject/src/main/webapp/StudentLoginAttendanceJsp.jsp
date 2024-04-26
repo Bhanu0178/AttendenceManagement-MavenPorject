@@ -14,6 +14,7 @@
 	out.println("Name: " + slab.getName() + "<br><br>");
 	%>
 	<form action="studentattendanceform" method="post" >
+		<input type="hidden" name="rollno"  value="<%=slab.getRollNo()%>">
 		<label for="sub1">Sub1</label>
 		<input type="text" name="sub1" id="sub1" required><br><br>
 		<label for="sub2">Sub2</label>
