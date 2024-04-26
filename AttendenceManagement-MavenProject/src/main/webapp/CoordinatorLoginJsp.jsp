@@ -13,6 +13,6 @@
 	%>
 	<p>RollNo:&nbsp;<strong><%=clb.getRollno()%></strong><br>
 	<p>Name:&nbsp;<strong><%=clb.getName() %></strong></p>
-	<a href="AddStudentAttendence.html">Add Student Attendence</a>
+	<a href="AddStudentAttendence.html">AddStudentAttendence</a>
 </body>
 </html>

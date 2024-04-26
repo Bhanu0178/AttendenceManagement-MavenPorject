@@ -8,9 +8,9 @@
 </head>
 <body>
 	<%
-	String sab = (String) request.getParameter("rollno");
+	StudentAttendanceBean sab = (StudentAttendanceBean)session.getAttribute("sab");
 	%>
-	<strong>**<%=sab%> Student Attendance Added**</strong><br>
+	<strong>**<%=sab.getRollNo()%>......<%=sab.getName() %> Student Attendance Added**</strong><br>
 	<%@include file="AddStudentAttendence.html" %>
 </body>
 </html>

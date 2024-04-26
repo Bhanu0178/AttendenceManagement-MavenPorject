@@ -36,6 +36,7 @@ public class StudentLoginAttendanceServlet  extends HttpServlet
 			}
 			else
 			{
+				hs.setAttribute("slab", slab);
 				req.getRequestDispatcher("StudentLoginAttendanceJsp.jsp").forward(req, res);
 			}
 		}

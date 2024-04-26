@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.kb.beans.StudentAttendanceBean;
+import com.kb.beans.StudentLoginAttendanceBean;
 import com.kb.daos.StudentAttendanceDAO;
 
 @SuppressWarnings("serial")
@@ -48,6 +49,9 @@ public class StudentAttendanceServlet extends HttpServlet
 			int k = new StudentAttendanceDAO().add(sab);
 			if(k>0)
 			{
+				StudentLoginAttendanceBean slab = (StudentLoginAttendanceBean)hs.getAttribute("slab");
+				slab.setRollNo(rollNo);
+				hs.setAttribute("sab", sab);
 				req.getRequestDispatcher("StudentAttendanceJsp.jsp").forward(req, res);
 			}
 			else

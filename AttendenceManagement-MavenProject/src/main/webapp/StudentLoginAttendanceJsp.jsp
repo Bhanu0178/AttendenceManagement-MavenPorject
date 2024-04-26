@@ -9,11 +9,11 @@
 </head>
 <body>
 	<%
-	String rollNo = (String)request.getParameter("rollno");
-	out.println("RollNo: " + rollNo + "<br>");
+	StudentLoginAttendanceBean slab = (StudentLoginAttendanceBean)session.getAttribute("slab");
+	out.println("RollNo: " + slab.getRollNo() + "<br>");
 	%>
 	<form action="studentattendanceform" method="post" >
-		<input type="hidden" name="rollno"  value="<%=rollNo%>">
+		<input type="hidden" name="rollno"  value="<%=slab.getRollNo()%>">
 		<label for="sub1">Sub1</label>
 		<input type="text" name="sub1" id="sub1" required maxlength="1"><br><br>
 		<label for="sub2">Sub2</label>
